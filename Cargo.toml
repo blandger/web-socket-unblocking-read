@@ -1,0 +1,13 @@
+[package]
+name = "web-socket-unblocking-read"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tungstenite = {version = "0.20.0", features = ["native-tls"] }
+log = "0.4.8"
+env_logger = "0.10.0"
+url = "2.1.0"
+ureq = "2.7"
