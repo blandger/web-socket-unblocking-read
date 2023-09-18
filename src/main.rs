@@ -1,14 +1,11 @@
 mod lib;
 
 use crate::lib::request::format_json_command;
-use log::debug;
-use std::io::stdin;
 use std::net::TcpStream;
 use std::sync::{Arc, Mutex};
 use std::thread;
 use std::thread::JoinHandle;
 use std::time::Duration;
-use tungstenite::client::IntoClientRequest;
 use tungstenite::http::Response as HttpResponse;
 use tungstenite::stream::MaybeTlsStream;
 use tungstenite::{connect, Message, WebSocket};
