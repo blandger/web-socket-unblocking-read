@@ -9,5 +9,6 @@ edition = "2021"
 tungstenite = {version = "0.20.0", features = ["native-tls"] }
 log = "0.4.8"
 env_logger = "0.10.0"
+serde = { version = "1.0.152", features = ["derive"] }
 url = "2.1.0"
-ureq = "2.7"
+ureq = { version = "2.7", features = ["json", "charset"] }
